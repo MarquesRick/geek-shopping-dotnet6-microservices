@@ -85,6 +85,7 @@ namespace GeekShopping.IdentityServer
             app.UseIdentityServer();
             app.UseAuthorization();
 
+            //chamar metodo para criar admin e client
             initializer.Initialize();
 
             app.UseEndpoints(endpoints =>

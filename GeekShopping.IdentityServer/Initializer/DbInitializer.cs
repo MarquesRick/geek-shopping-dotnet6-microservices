@@ -32,14 +32,15 @@ namespace GeekShopping.IdentityServer.Initializer
 
             ApplicationUser admin = new ApplicationUser()
             {
-                UserName = "leandro-admin",
-                Email = "leandro-admin@erudio.com.br",
+                UserName = "henrique-admin",
+                Email = "henrique-admin@gmail.com.br",
                 EmailConfirmed = true,
-                PhoneNumber = "+55 (34) 12345-6789",
-                FirstName = "Leandro",
+                PhoneNumber = "+55 (19) 98408-0547",
+                FirstName = "Henrique",
                 LastName = "Admin"
             };
 
+            //cria user admin na base
             _user.CreateAsync(admin, "Erudio123$").GetAwaiter().GetResult();
             _user.AddToRoleAsync(admin,
                 IdentityConfiguration.Admin).GetAwaiter().GetResult();
@@ -53,14 +54,15 @@ namespace GeekShopping.IdentityServer.Initializer
 
             ApplicationUser client = new ApplicationUser()
             {
-                UserName = "leandro-client",
-                Email = "leandro-client@erudio.com.br",
+                UserName = "henrique-client",
+                Email = "henrique-client@gmail.com.br",
                 EmailConfirmed = true,
-                PhoneNumber = "+55 (34) 12345-6789",
-                FirstName = "Leandro",
+                PhoneNumber = "+55 (19) 98408-0547",
+                FirstName = "Henrique",
                 LastName = "Client"
             };
 
+            //cria user client na base
             _user.CreateAsync(client, "Erudio123$").GetAwaiter().GetResult();
             _user.AddToRoleAsync(client,
                 IdentityConfiguration.Client).GetAwaiter().GetResult();
