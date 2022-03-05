@@ -40,9 +40,13 @@ namespace GeekShopping.IdentityServer
 
             var builder = services.AddIdentityServer(options =>
                 {
+                    //lanca erros
                     options.Events.RaiseErrorEvents = true;
+                    //lanca informacoes
                     options.Events.RaiseInformationEvents = true;
+                    //lanca falhas
                     options.Events.RaiseFailureEvents = true;
+                    //lanca sucesso
                     options.Events.RaiseSuccessEvents = true;
                     options.EmitStaticAudienceClaim = true;
                 }).AddInMemoryIdentityResources(
@@ -77,6 +81,7 @@ namespace GeekShopping.IdentityServer
             app.UseStaticFiles();
 
             app.UseRouting();
+            //precisa ser nessa ordem (entre routing e authorization)
             app.UseIdentityServer();
             app.UseAuthorization();
 
