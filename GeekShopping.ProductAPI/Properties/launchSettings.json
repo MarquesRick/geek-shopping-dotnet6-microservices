@@ -12,8 +12,7 @@
     "GeekShopping.ProductAPI": {
       "commandName": "Project",
       "launchBrowser": true,
-      "launchUrl": "swagger",
-      "applicationUrl": "https://localhost:4440;http://localhost:4441",
+      "applicationUrl": "http://localhost:31485",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
