@@ -36,7 +36,7 @@ namespace GeekShopping.ProductAPI
             services.AddDbContext<MySQLContext>(options => options.
                 UseMySql(connection,
                         new MySqlServerVersion(
-                            new Version(8, 0, 5))));
+                            new Version(8, 0, 5)))); // version mysql
             
             IMapper mapper = MappingConfig.RegisterMaps().CreateMapper();
             services.AddSingleton(mapper);

@@ -3,6 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace GeekShopping.ProductAPI.Model.Base
 {
+    //base entity
     public class BaseEntity
     {
 
