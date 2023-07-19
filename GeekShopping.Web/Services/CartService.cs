@@ -93,6 +93,6 @@ namespace GeekShopping.Web.Services
         public async Task<bool> ClearCart(string userId, string token)
         {
             throw new NotImplementedException();
-        }
+        }                                                                                                               
     }
 }
