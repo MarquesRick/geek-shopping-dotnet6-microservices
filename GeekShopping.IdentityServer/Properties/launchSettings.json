@@ -11,7 +11,7 @@
     "GeekShopping.IdentityServer": {
       "commandName": "Project",
       "launchBrowser": true,
-      "applicationUrl": "http://localhost:18029",
+      "applicationUrl": "https://localhost:4435;http://localhost:4436",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }

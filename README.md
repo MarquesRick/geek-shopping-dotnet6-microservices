@@ -23,6 +23,7 @@ Using XUnit for Unit Tests
 ### 🏤 Architecture
 
 <a href="https://learn.microsoft.com/en-us/azure/architecture/guide/architecture-styles/microservices">🔗 Microservices Architecture </a>
+Ocelot: API Gateway
 
 ### 🎲 Database
 
@@ -56,3 +57,4 @@ dotnet new --install Duende.IdentityServer.Templates::5.1.0
 [Swashbuckle.AspNetCore](https://www.nuget.org/packages/Swashbuckle.AspNetCore)<br/>
 [Duende IdentityServer](https://duendesoftware.com/products/identityserver)<br/>
 [RabbitMQ](https://www.rabbitmq.com/)<br/>
+[Ocelot](https://ocelot.readthedocs.io/en/latest/index.html)
