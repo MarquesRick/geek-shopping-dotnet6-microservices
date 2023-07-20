@@ -39,6 +39,9 @@ dotnet ef migrations add {CUSTOM_NAME_MIGRATION}
 
 # for apply changes
 dotnet ef database update
+
+# apply a specific migration
+dotnet ef database update {YOUR_MIGRATION_NAME}
 ```
 
 ##### 2. Install Duende IdentityServer
